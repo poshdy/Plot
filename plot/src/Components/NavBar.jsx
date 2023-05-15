@@ -16,7 +16,7 @@ const NavBar = () => {
   };
   window.addEventListener("scroll", changeColor);
   return (
-    <div className="w-full sticky z-50 top-1 ">
+    <div className="w-full mx-auto sticky z-50 top-1 ">
       <motion.div
         variants={NavCon}
         initial="hidden"
@@ -31,7 +31,7 @@ const NavBar = () => {
         <Link to={"/"}>
           <motion.h1
             variants={NavItem}
-            className=" text-3xl md:text-4xl font-bold"
+            className=" text-2xl md:text-3xl font-bold"
           >
             Plot
           </motion.h1>
@@ -54,10 +54,11 @@ const NavBar = () => {
       <div
         className={
           Mob
-            ? "bg-[#252525] h-[40%] w-full flex flex-col justify-center items-center duration-300 absolute top-[100%]   "
-            : "absolute top-[-500px]"
+            ? "bg-[#252525] h-[20%] w-full flex flex-col justify-center items-center duration-300 fixed top-10 "
+            : "absolute top-[-100%] duration-300 ease-in-out"
         }
       >
+        
         <Link to={"/"}>Home</Link>
         <Link to={"/discover"}>Discover</Link>
         <Link to={"/trending"}>Trending</Link>
