@@ -51,10 +51,11 @@ const NavBar = () => {
         />
       </motion.div>
 
+
       <div
         className={
           Mob
-            ? "bg-[#252525] h-[20%] w-full flex flex-col justify-center items-center duration-300 fixed top-10 "
+            ? "bg-[#252525] h-[20%] container  flex flex-col justify-center items-center duration-300 fixed top-10 "
             : "absolute top-[-100%] duration-300 ease-in-out"
         }
       >
