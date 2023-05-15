@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,100&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --bg: #131313;
+    --mainColor: #FFFDCC;
+    
+    --SecColor: #252525;
+
+font-family: Poppins;
+}
+*{
+    scroll-behavior: smooth;
+   
+}
+
+
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
